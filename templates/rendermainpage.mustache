@@ -1,0 +1,110 @@
+<div>
+
+    <ul class="nav nav-tabs" id="rkibooks-tab" role="tablist">
+        <li class="nav-item">
+            <a class="rkibook-nav-link nav-link active rki-tab" id="book-tab" data-type="book" data-toggle="tab"
+               href="#b" role="tab"
+               aria-controls="book" aria-selected="true">Книги РКИ</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="rki-tab-content">
+        <div class="rkibook-tab-pane tab-pane show active" id="rkibook-book" role="tabpanel" aria-labelledby="book-tab">
+            <br>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="rki-filter-book-title">Название</label>
+                        <input type="text" class="rki-form-control form-control rki-filter" id="rki-filter-book-title"
+                               placeholder="Название книги">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="rki-filter-book-pubhouse">Издательство</label>
+                        <input type="text" class="rki-form-control form-control rki-filter" id="rki-filter-book-pubhouse"
+                               placeholder="Издательство">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="rki-filter-book-author">Автор</label>
+                        <input type="text" class="rki-form-control form-control rki-filter" id="rki-filter-book-author"
+                               placeholder="Автор">
+                    </div>
+
+                    <div class="form-group col-md-1">
+                        <label for="rki-filter-book-yearleft">Год с</label>
+                        <input type="number" class="rki-form-control form-control rki-filter" id="rki-filter-book-yearleft"
+                               placeholder="Год с">
+                    </div>
+                    <div class="form-group col-md-1">
+                        <label for="rki-filter-book-yearright">Год по</label>
+                        <input type="number" class="rki-form-control form-control rki-filter" id="rki-filter-book-yearright"
+                               placeholder="Год по">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="rkibook-tab-pane tab-pane" id="rkibook-journal" role="tabpanel" aria-labelledby="journal-tab">
+            <br>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="rki-filter-journal-title">Название</label>
+                        <input type="text" class="rki-form-control form-control rki-filter" id="rki-filter-journal-title"
+                               placeholder="Название издания">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="rki-filter-journal-pubhouse">Издательство</label>
+                        <input type="text" class="rki-form-control form-control rki-filter" id="rki-filter-journal-pubhouse"
+                               placeholder="Издательство">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="rki-content">
+        <div>
+            <a id="rki-filter-apply" class="btn btn-secondary">Найти</a>
+            <a id="rki-filter-clear" class="btn btn-secondary">Очистить</a>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div id="rki-items-list" class="col-sm">
+                <!--list-->
+            </div>
+            <div id="rki-items-details" class="col-sm">
+                <div>
+                    <div>
+                        <div>
+                            <div class="row">
+                                <div id="rki-item-detail-image" class="col-sm-5 pub-image">
+                                    <a href=""><img src="" class="img-responsive thumbnail" alt=""></a>
+                                </div>
+                                <div class="col-sm-7">
+                                    <br>
+                                    <div id="rki-item-detail-title"></div>
+                                    <div id="rki-item-detail-title_additional"></div>
+                                    <div id="rki-item-detail-pubhouse"></div>
+                                    <div id="rki-item-detail-authors"></div>
+                                    <div id="rki-item-detail-pubtype"></div>
+                                    <div id="rki-item-detail-pubyear"></div>
+                                    <br>
+                                    <a id="rki-item-detail-read" style="display: none"
+                                       class="btn btn-secondary" target="_blank">Читать</a>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="rki-details-fields">
+                                <div id="rki-item-detail-description"></div>
+                                <br>
+                                <div id="rki-item-detail-keywords"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
